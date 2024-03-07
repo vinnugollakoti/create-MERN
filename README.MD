@@ -46,11 +46,9 @@ but we should change like this
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
-<code>
 const app = express()
 app.use(cors())
 app.use(express.json())
-</code>
 app.listen(6000, () => {
 console.log("Server is Running!")
 })
