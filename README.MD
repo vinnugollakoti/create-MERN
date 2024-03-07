@@ -37,6 +37,21 @@ but we should change like this
 },</code>
 
 # final step
-1) in terminal -- npm run server 
 
-### still processing
+1. in terminal -- npm run server
+
+### total boilerplate code for to run server
+
+<code>
+const express = require("express")
+const mongoose = require("mongoose")
+const cors = require("cors")
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+
+app.listen(6000, () => {
+console.log("Server is Running!")
+})
+</code>
